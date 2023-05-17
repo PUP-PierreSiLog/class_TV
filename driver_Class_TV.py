@@ -19,10 +19,13 @@ class TVDriver:
 
         window=tk.Tk()
         #Print TV 1's properties
-        lbl=tk.Label(text="TV 1's channel is "+ str(first_tv.know_tv_channel()) + "and the volume is" + str(first_tv.know_tv_volume()))
+        lbl=tk.Label(text="TV 1's channel is "+ str(first_tv.know_tv_channel()) + "and the volume is " + str(first_tv.know_tv_volume()))
+        lbl=tk.Label(text="TV 2's channel is " + str(second_TV.know_tv_channel()) + "and the volume is" + str(second_TV.know_tv_volume()))
         lbl.pack()
         #Print TV 2's properties
         print("TV 2's channel is ", second_TV.know_tv_channel(), "and the volume is", second_TV.know_tv_volume())
+
+        window.mainloop()
 
 driver=TVDriver()
 driver.TVTest()
