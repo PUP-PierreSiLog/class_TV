@@ -1,5 +1,5 @@
 class TV:
-    def __init__(tv_set, channel=int, volume=int, status=bool):
+    def __init__(tv_set, channel=0, volume=0, status=True):
         tv_set.channel=channel
         tv_set.volume=volume
         tv_set.status=status
