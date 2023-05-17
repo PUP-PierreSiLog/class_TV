@@ -1,5 +1,6 @@
 from Class_TV import TV 
 import tkinter as tk
+import sys
 class TVDriver:
     def TVTest(self):
         #Imports two TV sets
@@ -25,8 +26,7 @@ class TVDriver:
         lbl.pack()
         lbl2=tk.Label(text="TV 2's channel is " + str(second_TV.know_tv_channel()) + " and the volume is " + str(second_TV.know_tv_volume()))
         lbl2.pack()
-        #Print TV 2's properties
-        print("TV 2's channel is ", second_TV.know_tv_channel(), "and the volume is", second_TV.know_tv_volume())
+        button=tk.Button(text="Exit", command=sys.exit())
 
         window.mainloop()
 
