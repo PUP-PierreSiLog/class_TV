@@ -1,3 +1,4 @@
-from Class_TV import Class_TV
-def TVTest():
-    first_tv=TV()
+from Class_TV import TV
+class TVDriver:
+    def TVTest(tv_set):
+        first_tv=TV()
