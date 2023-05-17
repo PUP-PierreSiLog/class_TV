@@ -26,7 +26,7 @@ class TVDriver:
         lbl.pack()
         lbl2=tk.Label(text="TV 2's channel is " + str(second_TV.know_tv_channel()) + " and the volume is " + str(second_TV.know_tv_volume()))
         lbl2.pack()
-        button=tk.Button(text="Exit", command=window.quit())
+        button=tk.Button(text="Exit", command=window.quit)
         button.pack()
         window.mainloop()
 
