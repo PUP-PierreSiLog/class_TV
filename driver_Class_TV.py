@@ -1,6 +1,6 @@
 from Class_TV import TV
 class TVDriver:
-    def TVTest():
+    def TVTest(self):
         #Imports two TV sets
         first_tv=TV()
         second_TV=TV()
@@ -9,4 +9,5 @@ class TVDriver:
         first_tv.know_tv_channel()
         first_tv.tv_channel(12)
         #Print TV 1's properties
-        print("TV 1's channel is ", first_tv.tv_channel)
+        print("TV 1's channel is ", first_tv.tv_channel())
+    TVTest()
