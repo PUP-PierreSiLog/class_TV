@@ -12,6 +12,7 @@ class TV:
 
     def tv_volume(tv_set, volume):
         tv_set.volume=volume
+
+    def tv_channel(tv_set, channel):
+        tv_set.channel=channel
         
-    
-    
