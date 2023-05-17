@@ -21,7 +21,7 @@ class TVDriver:
         window=tk.Tk()
         #Print TV 1's properties
         window.title("TV Properties")
-        window.minsize(300,500)
+        window.minsize(500,500)
         title=tk.Label(text=(pyfiglet.figlet_format("Welcome!", justify="center")))
         title.pack()
         label=tk.Label(text="TV 1's channel is "+ str(first_tv.know_tv_channel()) + " and the volume is " + str(first_tv.know_tv_volume()))
